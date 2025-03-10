@@ -1,0 +1,6 @@
+body{
+    font-family: "PublichSans Regular", sans-serif;
+    font-size: 16px;
+    background-color: var(--body-bg);
+    overflow-x: hidden;
+}

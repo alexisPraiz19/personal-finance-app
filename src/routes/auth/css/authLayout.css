@@ -1,0 +1,97 @@
+.auth-layout{
+    /* Contenedor padre principal */
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 20px;
+    padding: 15px;
+    
+    /* SideBar */
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 500px;
+        min-width: 380px;
+        height: calc(100vh + 280px);
+        max-height: 820px;
+        padding: 30px 35px;
+        color: var(--white);
+        background-image: url("/images/register-image.svg");
+        background-size: cover;
+        border-radius: 15px;
+
+        .sidebar-texts{
+            .sidebar-texts_strong{
+                display: inline-block;
+                font-size: 1.77rem;
+                color: currentColor;
+                text-wrap: balance;
+            }
+
+            .sidebar-texts_paragraph{
+                margin-top: 15px;
+                font-size: var(--text-preset-4);
+                line-height: 1.4;
+            }
+        }
+    }
+
+    /* Formulario de registro */
+    .auth-layout_main{
+        justify-self: center;
+        width: 90%; max-width: 540px;
+        height: max-content;
+        margin-top: 80px;
+        padding: 32px;
+        background-color: var(--white);
+        border-radius: 12px;
+
+        .main-title{ margin-bottom: 24px }
+
+        .form-register{
+            display: grid;
+            gap: 14px;
+
+            .form-register_label{
+                .form-register_label-fieldName{ font-size: var(--text-preset-5) }
+                
+                .form-register_input{
+                    display: block;
+                    width: 100%; height: 35px;
+                    margin-top: 6px;
+                    padding-inline: 10px;
+                    font-family: "PublicSans Regular";
+                    font-size: var(--text-preset-4);
+                    outline: none;
+                    border: none;
+                    border-radius: 8px;
+                    box-shadow: 0 .5px 3px -1px var(--beige-500);
+                }
+            }
+
+            .form-register_button{
+                margin-top: 10px;
+                padding: 16px;
+                font-size: .9em;
+                color: var(--white);
+                background-color: var(--grey-900);
+                outline: 1px solid #D2D2D2;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+
+        .auth-layout_main-footer{
+            margin-top: 30px;
+            font-size: .82em;
+            color: #696868;
+            text-align: center;
+
+            a{
+                color: #201f24;
+                font-weight: 600;
+            }
+        }
+    }
+}

@@ -1,0 +1,120 @@
+.recurringBills{
+    /* Contenido principal de la sección (recurring bills) */
+    .recurringBills-content{
+        display: flex;
+        gap: 24px;
+        margin-top: 24px;
+
+        .recurringBills-leftSide{
+            flex: .7;
+
+            .totalBills{
+                margin-bottom: 24px;
+                padding: 24px;
+                background-color: var(--grey-900);
+                border-radius: 12px;
+
+                .totalBills-texts{
+                    margin-top: 30px;
+                    color: var(--white);
+                    line-height: 1.5;
+                    
+                    .totalBills-text{
+                        display: block;
+                        font-size: var(--text-preset-4); 
+                    }
+                    .totalBills-amount{ font-size: var(--text-preset-1) }
+                }
+            }
+
+            .summary{
+                padding: 24px !important;
+
+                .summary-texts{
+                    margin-top: 25px;
+
+                    .summary-texts_text{
+                        display: flex;
+                        justify-content: space-between;
+                        padding-block: 18px;
+                        font-size: var(--text-preset-4);
+                        font-style: normal;
+
+                        .summary-texts_text{ color: var(--beige-500); }
+
+                        .summary-texts_amount{ 
+                            font-family: "PublicSans Bold";
+                            font-style: normal;
+                            text-align: end;
+                        }
+
+                        &:not(:first-child){ border-top: 1px solid var(--beige-500) }
+                        &:first-child{ padding-top: 0 }
+                        &:last-child{ padding-bottom: 0 }
+                    }
+                }
+            }
+        }
+
+        .recurringBills-rightSide{
+            flex: 1;
+
+            .filter-bills{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 16px;
+
+                label{ /* Contenedor del filtro por busqueda */
+                    flex: .75;
+                }
+            }
+
+            .rightSide-table{
+                min-width: 100%;
+
+                .rightSide-table_thead{
+                    margin-bottom: 16px;
+
+                    .table-thead_tr{
+                        font-size: var(--text-preset-5);
+                        color: var(--beige-500);
+
+                        td:last-child{ text-align: end; }
+                    }
+                }
+
+                .rightSide-table_tbody{
+                    margin-top: 16px;
+
+                    .table-body_tr{
+                        td{
+                            padding-block: 15px;
+                            border-top: 1px solid var(--beige-500);
+                            font-size: var(--text-preset-5);
+
+                            &:first-child > em{
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                            }
+
+                            &:last-child{ text-align: end; }
+
+                            em{
+                                font-family: "PublicSans Bold";
+                                font-size: var(--text-preset-4);
+                                font-style: normal;
+
+                                img{
+                                    width: 32px; height: 32px;
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

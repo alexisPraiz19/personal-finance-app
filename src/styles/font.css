@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "PublicSans Regular";
+    src: url("/font/PublicSans-Regular.woff2") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PublicSans Bold";
+    src: url("/font/PublicSans-Bold.woff2") format("truetype");
+    font-weight: bolder;
+    font-style: normal;
+}
+
+:root{
+    --text-preset-1: 2rem; /* 32px */
+    --text-preset-2: 1.25rem; /* 20px */
+    --text-preset-3: 1rem; /* 16px */
+    --text-preset-4: .88rem; /* 14px */
+    --text-preset-5: .75rem; /* 12px */
+}

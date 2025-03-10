@@ -1,0 +1,85 @@
+.pots{
+    .pots-header{ 
+        margin-bottom: 30px;
+        height: 53px 
+    }
+
+    /* Contenido principal de la sección (pots) */
+    .pots-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        .pot{
+            .pot-barContainer{
+                margin-top: 20px;
+                color: var(--grey-500);
+
+                .totalSaved{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    
+                    .totalSaved-text{ 
+                        font-size: var(--text-preset-4);
+                        color: currentColor;
+                    }
+
+                    .totalSaved-amount{ 
+                        font-size: var(--text-preset-1);
+                        font-style: normal; 
+                    }
+                }
+
+                .bar{
+                    width: 100%;
+                    div{/* barra de progreso */
+                        height: 8px !important;
+                        margin-bottom: 10px !important;
+                        padding: 0 !important;
+                    }
+
+                    .bar-text{
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: var(--text-preset-5);
+
+                        .bar-percent{ color: currentColor }
+    
+                        .bar-target{
+                            font-family: "PublicSans Regular";
+                            color: currentColor;
+                        }
+                    }
+                }
+            }
+
+            .pot-buttons{
+                display: flex;
+                gap: 16px;
+                margin-top: 40px;
+
+                .pot-buttons_button{
+                    flex: 1;
+                    padding: 16px;
+                    font-family: "PublicSans Bold";
+                    font-size: var(--text-preset-4);
+                    color: var(--grey-900);
+                    background-color: var(--beige-100);
+                    border-radius: 8px;
+                    border: none;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: var(--white);
+                        outline: 1.5px solid #D2D2D2;
+                    }
+                }
+            }
+        }
+
+        .box{
+            padding: 24px !important;
+        }
+    }
+}

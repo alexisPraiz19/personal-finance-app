@@ -1,0 +1,48 @@
+.r-bolder{
+    font-family: "PublicSans Bold";
+    color: var(--grey-900);
+}
+
+.dashboard{
+    .main{
+        .page{
+            .r-title{ 
+                font-size: var(--text-preset-1);
+                color: var(--grey-900);
+            }
+
+            .r-bolder{
+                font-family: "PublicSans Bold";
+                font-style: normal;
+                color: var(--grey-900);
+            }
+
+            .r-boxHeader{
+                display: grid;
+                grid-template-columns: max-content;
+                grid-auto-flow: column;
+                align-items: center;
+                
+                h3{ font-size: var(--text-preset-2) }
+
+                a{
+                    width: 100%;
+                    font-size: var(--text-preset-4);
+                    color: var(--grey-500);
+                    text-align: end;
+                    text-decoration: none;
+
+                    svg{
+                        margin-left: 5px;
+                        translate: 0 1px; 
+                    }
+                }
+            }
+
+            .r-grid{
+                display: grid;
+                gap: 24px;
+            }
+        }
+    }
+}
