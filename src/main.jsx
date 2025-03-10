@@ -13,7 +13,6 @@ import SingUp from "./routes/auth/components/SingUp"
 
   // Componentes enrutamiento
 import Dashboard from "./routes/layouts/dashboard/Darshboard"
-import Overview from "./routes/layouts/overview/OverView"
 import Transaction from "./routes/layouts/transactions/Transactions"
 import Budgets from "./routes/layouts/budgets/Budgets"
 import Pots from "./routes/layouts/pots/Pots"
