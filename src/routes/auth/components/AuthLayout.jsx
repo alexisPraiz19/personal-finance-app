@@ -1,7 +1,7 @@
 /---/
 import { Outlet } from "react-router"
 import SideBar from "./SideBar"
-import "../css/AuthLayout.css"
+import "../css/authLayout.css"
 /---/
 
 export default function AuthLayout(){
